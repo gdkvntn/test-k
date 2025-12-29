@@ -3,11 +3,11 @@ const { KameleoonClient, Environment } = KameleoonSDK;
 const configuration = {
   updateInterval: 20,
   environment: Environment.Production,
-  domain: ".github.io",
+  domain: '.github.io',
 };
 
 const client = new KameleoonClient({
-  siteCode: "zq52tvcwyx",
+  siteCode: 'zq52tvcwyx',
   configuration,
 });
 
