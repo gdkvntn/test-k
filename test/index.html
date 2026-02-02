@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,7 +12,7 @@
     <script type="module" src="app.js"></script>
   </head>
 
-  <script type="text/javascript">
+  <script>
     // Duration in milliseconds to wait while the Kameleoon application file is loaded
     var kameleoonLoadingTimeout = 1000;
 
@@ -32,7 +32,7 @@
         kameleoonStn.styleSheet.cssText = kameleoonCc;
       } else {
         kameleoonStn.appendChild(
-          document.createTextNode(kameleoonCc)
+          document.createTextNode(kameleoonCc),
         );
       }
       kameleoonS.parentNode.insertBefore(kameleoonStn, kameleoonS);
@@ -46,15 +46,16 @@
       };
       window.kameleoonDisplayPageTimeOut = window.setTimeout(
         window.kameleoonDisplayPage,
-        kameleoonLoadingTimeout
+        kameleoonLoadingTimeout,
       );
     }
   </script>
+
   <script
     type="text/javascript"
-    src="//zq52tvcwyx.kameleoon.io/kameleoon.js"
-    async="true"
+    src="//zq52tvcwyx.kameleoon.io/engine.js"
     fetchpriority="high"
+    async
   ></script>
 
   <body>
